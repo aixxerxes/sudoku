@@ -1,0 +1,16 @@
+获取九宫格里所有的值,并放在一个数组里，*input_arr*
+创建 空数组，里面放坐标，简称坐标数组，*coordinate_arr*
+将 坐标数组 与 *input_arr* 的数组以键值对的形式存在；*coordinate*
+
+*coordinate_row*：一个数组里放每行数组（第0个放 *0开头*的数组，第1个放 *1开头*的数组，以此类推）
+*coordinate_column*：一个数组里放每列数组（第0个放 *0结尾*的数组，第1个放 *1结尾*的数组，以此类推）
+*coordinate_place*：一个数组里放每三宫格 (手动)
+
+*coordinate_row_pv*：每行可能值的数组的数组
+*coordinate_column_pv*：每列可能值的数组的数组
+*coordinate_place_pv*：每宫格可能值的数组的数组
+
+开始填数，寻找空值
+从坐标数组 *coordinate_arr* 中检索 *coordinate* 中的空值
+若为空值，找到其所在的行 *location_row* 、列 *location_column* 、宫格 *location_place* 
+计算其所在三者的交集
